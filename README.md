@@ -1,6 +1,6 @@
 # 🛒 Grocery Store Management System - Java
 
-A simple yet powerful **Grocery Store Management System** built using **Java**. This console-based application allows store managers to manage inventory, billing, and customer interactions efficiently.
+A simple yet powerful **Grocery Store Management System** built entirely in **Java** (single `Main.java` file). This console-based application allows store managers to manage inventory, billing, and customer interactions efficiently without the need for external dependencies.
 
 ---
 
@@ -10,9 +10,9 @@ A simple yet powerful **Grocery Store Management System** built using **Java**. 
 - 📦 View complete inventory
 - 🧾 Generate customer bills
 - 📊 Track stock levels and restock alerts
-- 💾 Data persistence using files (optional: MySQL integration)
-- 🧍 Manage customer details
-- 📁 Admin and user login system (if included)
+- 🧍 Manage customer purchases
+- 🔐 Admin and user menu separation
+- 💾 Data stored in-memory (can be extended to use files/DB)
 
 ---
 
@@ -22,27 +22,28 @@ A simple yet powerful **Grocery Store Management System** built using **Java**. 
 |------------|-------------------------|
 | Java       | Core language           |
 | OOP        | Object-Oriented Design  |
-| File I/O   | For data storage        |
-| MySQL      | (Optional) DB support   |
+| File I/O   | (Pluggable, optional)   |
 | Git        | Version Control         |
 
 ---
 
-## 📁 Folder Structure
+## ⚙️ How to Run
 
-```plaintext
-grocery-store/
-├── src/
-│   ├── Main.java
-│   ├── GroceryItem.java
-│   ├── InventoryManager.java
-│   ├── BillingSystem.java
-│   ├── Customer.java
-│   ├── Admin.java
-│   └── utils/
-│       └── FileHandler.java
-├── data/
-│   ├── inventory.txt
-│   └── customers.txt
-├── README.md
-└── LICENSE
+### ✅ Requirements:
+- Java JDK 8 or above
+- Terminal or any Java-supported IDE (e.g., IntelliJ, Eclipse, VS Code)
+
+### 🔧 Setup Instructions
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/java-grocery-store.git
+
+# Navigate to project folder
+cd java-grocery-store
+
+# Compile the project
+javac Main.java
+
+# Run the project
+java Main
